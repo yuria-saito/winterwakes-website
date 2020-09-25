@@ -89,3 +89,9 @@ const noise = () => {
 };
 
 noise();
+
+
+$(".nav-btn").on("touchstart",function(){
+	$(this).toggleClass("open");
+	$(".navigation").toggleClass("open");
+});
