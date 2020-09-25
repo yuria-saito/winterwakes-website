@@ -46,6 +46,12 @@ img{
 .text-pink{
 	color: #D9BFAF;
 }
+.pc{
+	display: inherit;
+}
+.sp{
+	display: none;
+}
 a{
 	color: #D9BFAF;
 }
@@ -67,7 +73,6 @@ h2{
 	width: 120px;
 	display: flex;
 	justify-content: center;
-	margin-top: 30px;
 }
 .navigation{
 	margin: auto 120px;
@@ -299,6 +304,7 @@ h2{
 		z-index: 50;
 	}
 	.navigation{
+		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
