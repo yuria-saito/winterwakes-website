@@ -303,6 +303,9 @@ h2{
 		top: 20px;
 		left: 20px;
 	}
+	.logo.open{
+		display: none;
+	}
 	.sp-logo{
 		font-weight: 500;
 		font-size: 2rem;
@@ -310,21 +313,48 @@ h2{
 		letter-spacing: -0.075em;
 	}
 	.nav-btn{
+		appearance:none;
+		border: none;
+		background-color: rgba(0,0,0,0.00);
 		position: fixed;
 		z-index: 200;
 		top: 20px;
 		right: 20px;
+		width: 45px;
+		height: 15px;
+		transition: all 0.5s;
 	}
-	.nav-btn span:first-of-type{
-		
+	.line-1{
+		position: absolute;
+		width: 27px;
+		height: 2px;
+		right: 0;
+		background-color: #E4B498;
+		top: 0;
+	}	
+	.line-2{
+		position: absolute;
+		width: 37px;
+		height: 2px;
+		right: 0;
+		background-color: #E4B498;
+		bottom: 0;
 	}
-	.nav-btn span:last-of-type{
-		
+	.nav-btn.open{
+		height: 28px;
+	}
+	.nav-btn.open .line-1{
+		width: 37px;
+		transform: rotate(-45deg);
+		transform-origin: right;
+	}
+	.nav-btn.open .line-2{
+		width: 37px;
+		transform: rotate(45deg);
+		transform-origin: right;
 	}
 	
-	
-	.navigation{
-		display: none;
+	.navigation.on{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -333,6 +363,7 @@ h2{
 		z-index: 100;
 		background-color: rgba(255,157,142,0.98);
 		margin: 0;
+		padding-left: 20px;
 	}
 	.contents-wrap{
 		z-index: 40;
