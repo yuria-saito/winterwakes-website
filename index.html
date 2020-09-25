@@ -7,9 +7,14 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" type="text/javascript"></script>
 </head>
 
 <body>
+	<div id="loading">
+		<div id="loading-animation">
+		</div>
+	</div>
 	<canvas id="noise" class="noise"></canvas>
 	<header>
 			<div class="logo">
@@ -48,7 +53,7 @@
 	</header>
 	
 	<main>
-		<div class="contents-wrap">
+		<div class="contents-wrap sp-home">
 			<div class="home-video-wrap">
 				<iframe class="home-video" src="https://www.youtube.com/embed/vHPBRCeLaiQ?autoplay=1&mute=1&loop=1&playlist=vHPBRCeLaiQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -56,12 +61,14 @@
 		<div class="info-box">
 			<div class="info">
 				<p class="info-title">next live</p>
-				<p class="info-text pink">2020.9.1.Fri<br>
+				<p class="info-text pink">2020.9.1.Fri<br class="pc">
 				新宿ANTIKNOCK</p>
 			</div>
 		</div>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/noise.js"></script>
+	<script src="./js/main.js" type="text/javascript"></script>
+	<script src="./js/loading-data.json" type="text/javascript"></script>
 </body>
 </html>
