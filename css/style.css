@@ -358,7 +358,8 @@ h2{
 		transform-origin: right;
 	}
 	.navigation{
-		right: -800;
+		position: absolute;
+		right: -1200px;
 		transition: all 0.5s;
 	}
 	.navigation.open{
@@ -396,6 +397,27 @@ h2{
 	
 	.contents-wrap{
 		margin-top: 56px;
+	}
+	
+	
+	/*-------------------------------------home*/
+	.contents-wrap.sp-home{
+		margin:56px 0 0;
+		width: 100vw;
+	}
+	.info-box{
+		margin: 20px;
+		width: -webkit-fill-available;
+		right: auto;
+		bottom: 20px;
+		padding: 20px;
+	}
+	.info-title{
+		font-size: 1.2rem;
+	}
+	.info-text{
+		font-size: 2rem;
+		line-height: inherit;
 	}
 
 }

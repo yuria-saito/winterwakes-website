@@ -91,7 +91,7 @@ const noise = () => {
 noise();
 
 
-$(".nav-btn").on("touchstart",function(){
+$(".nav-btn").on("click",function(){
 	$(this).toggleClass("open");
 	$(".navigation").toggleClass("open");
 });
