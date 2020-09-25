@@ -285,13 +285,10 @@ h2{
 
 
 @media screen and (max-width: 760px){
-	.logo{
-		display: none;
+	.sp{
+		display: inherit;
 	}
-	.left{
-		display: none;
-	}
-	.right{
+	.pc{
 		display: none;
 	}
 	.contents-wrap{
@@ -299,10 +296,33 @@ h2{
 	}
 	
 	/*-------------------------------------navigation*/
-	header{
+	.logo{
 		position: fixed;
-		z-index: 50;
+		z-index: 200;
+		width: 130px;
+		top: 20px;
+		left: 20px;
 	}
+	.sp-logo{
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 100%;
+		letter-spacing: -0.075em;
+	}
+	.nav-btn{
+		position: fixed;
+		z-index: 200;
+		top: 20px;
+		right: 20px;
+	}
+	.nav-btn span:first-of-type{
+		
+	}
+	.nav-btn span:last-of-type{
+		
+	}
+	
+	
 	.navigation{
 		display: none;
 		position: fixed;
@@ -313,7 +333,6 @@ h2{
 		z-index: 100;
 		background-color: rgba(255,157,142,0.98);
 		margin: 0;
-		padding: 0 20px;
 	}
 	.contents-wrap{
 		z-index: 40;
@@ -332,6 +351,10 @@ h2{
 	}
 	.nav-item{
 		margin-bottom: 10px;
+	}
+	
+	.contents-wrap{
+		margin-top: 56px;
 	}
 
 }
